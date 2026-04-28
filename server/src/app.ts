@@ -1,6 +1,8 @@
 import express from "express";
 import type { Application, Request, Response } from "express";
 import cors from "cors";
+import vapiRoutes from "./routes/vapi.routes.ts";
+
 // Add this import at the top with your other route imports
 import chatRoutes from "./routes/chat.routes.ts";
 
@@ -22,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/chat", chatRoutes);
+app.use("/api/vapi", vapiRoutes);
 app.use((_req: Request, res: Response) => {
   res.status(404).json({ success: false, message: "Route not found." });
 });
