@@ -11,14 +11,14 @@
     "exactOptionalPropertyTypes": true,
     "allowImportingTsExtensions": true,
     "rewriteRelativeImportExtensions": true,
-    "noEmit": true,
     "strict": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
-  },
+  }
+,
   "include": [
     "src/**/*",
     "scripts/**/*"

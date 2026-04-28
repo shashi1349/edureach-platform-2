@@ -1,7 +1,7 @@
 import app from "./app.ts";
 import connectDB from "./config/database.config.ts";
 import { initializeKnowledgeBase } from "./services/rag.service.ts";
-
+import 'dotenv/config';
 const PORT = process.env.PORT || 5000;
 
 const start = async (): Promise<void> => {
